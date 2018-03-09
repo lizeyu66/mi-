@@ -854,7 +854,6 @@
 #banner{
 	width: 1226px;
 	height: 460px;
-	background-color: pink;
 	margin: 0 auto;
 	position: relative;
 }
@@ -1235,4 +1234,7 @@
 }
 .nr_bottom_inner{
 
+}
+.xiaoneirong .shipin_bottom{
+	height: 284px;
 }
