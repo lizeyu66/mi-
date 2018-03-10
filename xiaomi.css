@@ -567,7 +567,7 @@
 	margin-right: 0;
 }
 .nr_bottom_inner{
-	width: 1000px;
+	width: 1300px;
 	height: 100%;
 	float: left;
 	transition: all 0.5s;
@@ -1248,6 +1248,8 @@
 	font-size: 20px;
 	opacity: 0;
 	transition: all 0.5s;
+	z-index: 999;
+	cursor: pointer;
 }
 .nr_next{
 	width: 20px;
@@ -1263,17 +1265,19 @@
 	font-weight: 800;
 	opacity: 0;
 	transition: all 0.5s;
+	z-index: 999;
+	cursor: pointer;
 }
-.neirong_item:hover .nr_next{
+.neirong_bottom01:hover .nr_next{
 	opacity: 0.3;
 }
-.neirong_item:hover .nr_prev{
+.neirong_bottom01:hover .nr_prev{
 	opacity: 0.3;
 }
-.neirong_item .nr_prev:hover{
+ .nr_prev:hover{
 	opacity: 0.8;
 }
-.neirong_item .nr_next:hover{
+.nr_next:hover{
 	opacity: 0.8;
 }
 .xiaoneirong .shipin_bottom{
@@ -1288,6 +1292,7 @@
 	top: 0;
 	z-index: 999;
 	display: none;
+	transition: all 1s;
 }
 .banner_nav_menu1{
 	width: 260px;
@@ -1331,7 +1336,6 @@
 	overflow: hidden;
 	padding-left: 68px;
 	border-top: 1px solid #e0e0e0;
-	overflow: hidden;
 }
 .banner_bottom1{
 	padding: 36px 0 0 0;
@@ -1383,4 +1387,7 @@
 	border: 2px solid #ff5600;
 	background-color: transparent;
 	margin-top: -2px;
+}
+.lia{
+	margin: 0 5px;
 }

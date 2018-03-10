@@ -154,14 +154,15 @@
 {
 	const tops=document.querySelectorAll(".banner_top li");
 	let bottoms=document.querySelector(".banner_bottom");
+	let boxs=document.querySelector(".daohang")
 	tops.forEach(function(ele,index){
 		ele.onmouseenter=function(){
 			bottoms.style.height="239px";
 		}
-		ele.onmouseleave=function(){
+	})
+	boxs.onmouseleave=function(){
 			bottoms.style.height="0";
 		}
-	})
 		
 }
 
@@ -183,6 +184,7 @@
 			inners.style.marginLeft=n*-310+"px";
 			pagers[n].classList.add("active00");
 			pagers[n-1].classList.remove("active00");
+			obj=pagers[n];
 		}
 		prevs.onclick=function(ele,index){
 			n--;
@@ -190,11 +192,13 @@
 				n=0;
 				return;
 			}
-			let obj=pagers[0];
+			
 			inners.style.marginLeft=n*-310+"px";
 			pagers[n].classList.add("active00");
 			pagers[n+1].classList.remove("active00");
+			obj=pagers[n];
 
+			let obj=pagers[0];
 			pagers.forEach(function(ele,index){
 				ele.onclick=function(){
 					obj.classList.remove("active00");
@@ -206,6 +210,19 @@
 			})
 
 		}
+
+		let obj=pagers[0];
+		pagers.forEach(function(ele,index){
+			ele.onclick=function(){
+				obj.classList.remove("active00");
+				this.classList.add("active00");
+				obj=this;
+				inners.style.marginLeft=index*-310+"px";
+				n=index;
+			}
+		})
+
+
 	}
 	const contentList=document.querySelectorAll(".neirong_bottom01");
 	contentList.forEach(function(ele){
