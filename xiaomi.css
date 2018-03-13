@@ -65,6 +65,7 @@
 }
 .daohang_w{
 	float: left;
+	transition: all 1s linear;
 }
 .daohang_wenzi li{
 	line-height: 100px;
@@ -706,8 +707,8 @@
 	z-index: 9;
 	opacity: 1;
 }
-.dian .active{
-	background-color: red;
+.banner_dian .active{
+	background: red;
 	opacity: 1;
 }
 .b_ico:hover{
