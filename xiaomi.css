@@ -63,6 +63,9 @@
 	line-height: 100px;
 	overflow: hidden;
 }
+.daohang_w{
+	float: left;
+}
 .daohang_wenzi li{
 	line-height: 100px;
 	color: #333;
@@ -327,6 +330,7 @@
 	position: absolute;
 	top: 58px;
 	left: 0;
+	transition: all 1s linear;
 }
 .zhineng_top{
 	width: 1226px;
@@ -669,6 +673,7 @@
 	width: 80px;
 	height: 66px;
 	padding-top: 19px;
+	cursor: pointer;
 }
 .b_icon_wz{
 	color: #b0b0b0;
@@ -1331,11 +1336,17 @@
 }
 .banner_bottom{
 	width: 1226px;
-	height: 0;
+	height: 239px;
 	background-color: #fff;
 	overflow: hidden;
 	padding-left: 68px;
 	border-top: 1px solid #e0e0e0;
+	position: absolute;
+	left: 0;
+	top: 140px;
+	z-index: 999; 
+	display: none;
+	transition: all 1s;
 }
 .banner_bottom1{
 	padding: 36px 0 0 0;
@@ -1346,7 +1357,7 @@
 .banner_bottom1 img{
 	width: 128px;
 	height: 88px;
-	margin: 0 auto;
+	margin: 0 auto 25px;
 }
 .banner_bottom111{
 	width: 29px;
@@ -1363,16 +1374,6 @@
 }
 .imga{
 	float: left;
-	margin-bottom: 25px;
-}
-.banner_bottom1 .p02{
-	text-align: center;
-	color: #ff5600;
-}
-.banner_bottom1 .p01{
-	text-align: center;
-	font-size: 12px;
-	color: #333;
 }
 .banner_bottom110{
 	border: 0;
@@ -1390,4 +1391,26 @@
 }
 .lia{
 	margin: 0 5px;
+	cursor: pointer;
+}
+.daohang2{
+	width: 1226px;
+	margin: 0 auto;
+	height: 100px;
+}
+.daohang_w span{
+	margin-right: 20px;
+	cursor: pointer;
+}
+.banner_bottom1 p{
+	width: 128px;
+	height: 40px;
+	line-height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #333;
+	font-size: 12px;
+}
+.banner_bottom1 p span{
+	color: #ff5600;
 }

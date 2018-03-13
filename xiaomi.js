@@ -150,22 +150,6 @@
 	})
 }
 
-//导航效果
-{
-	const tops=document.querySelectorAll(".banner_top li");
-	let bottoms=document.querySelector(".banner_bottom");
-	let boxs=document.querySelector(".daohang")
-	tops.forEach(function(ele,index){
-		ele.onmouseenter=function(){
-			bottoms.style.height="239px";
-		}
-	})
-	boxs.onmouseleave=function(){
-			bottoms.style.height="0";
-		}
-		
-}
-
 //内容效果
 {
 	function content(parents){
@@ -231,6 +215,30 @@
 
 }
 
+//导航效果
+{
+	const tops=document.querySelectorAll(".daohang_w");
+	let bottoms=document.querySelectorAll(".banner_bottom");
+	let obj=bottoms[0];
+	// tops.onmouseenter=function(){
+	// 	bottoms.style.height="239px";
+	// }
+	// tops.onmouseleave=function(){
+	// 	bottoms.style.height="0";
+	// }
+	tops.forEach(function(ele,index){
+		ele.onmouseenter=function(){
+			obj.style.display="none";
+			bottoms[index].style.display="block";
+			obj=bottoms[index];
+		}
+		ele.onmouseleave=function(){
+			bottoms[index].style.display="none";
+		}
+	})
+		
+}
+
 
 //智能效果
 {
@@ -256,3 +264,4 @@
 	});
 
 }
+
