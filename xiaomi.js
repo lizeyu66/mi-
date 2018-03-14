@@ -243,16 +243,17 @@
 //智能效果
 {
 	
-	function content(parent){
-		var btns=parent.querySelectorAll(".zhineng_more span");
-		var cons=parent.querySelectorAll(".zhineng .zhineng_bottom");
+	function contents(parent){
+		let btns=parent.querySelectorAll(".zhineng_more span");
+		let cons=parent.querySelectorAll(".zhineng_bottom");
 		for(let i=0;i<cons.length;i++){
 			btns[i].onmouseenter=function(){
 			for(let j=0;j<cons.length;j++){
-			// btns[j].classList.remove("active3");
+			btns[j].classList.remove("actives");
 			cons[j].style.zIndex="";
 		}
-		cons[i].style.zIndex=10;	
+		cons[i].style.zIndex=10;
+		btns[i].classList.add("actives");	
 	}
 	
 	}
@@ -260,7 +261,7 @@
 	}
 	const contentList=document.querySelectorAll(".zhineng");
 	contentList.forEach(function(ele){
-		content(ele);
+		contents(ele);
 	});
 
 }

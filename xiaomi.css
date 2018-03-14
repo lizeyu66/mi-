@@ -1222,10 +1222,6 @@
 	padding-top: 0;
 	height: 300px;
 }
-.zhineng_more .active3{
-	border-bottom: 2px solid #ff6700;
-	color: #ff5600;
-}
 .zhineng .active4{
 	z-index: 9;
 }
@@ -1414,4 +1410,9 @@
 }
 .banner_bottom1 p span{
 	color: #ff5600;
+}
+.zhineng_more .actives{
+	color: #ff5600;
+	border-bottom: 2px solid #ff6700;
+
 }
